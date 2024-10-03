@@ -8,7 +8,7 @@ import java.util.Map;
 public interface IContaService {
   Map<String, List<Conta>> listar();
 
-  void salvar(String identificador, Conta conta);
+  void salvar(String identificador, Conta conta) throws IllegalArgumentException;
 
   Conta buscar(String identificador, Integer numero) throws RegistroNaoEncontradoException;
 }

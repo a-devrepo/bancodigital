@@ -7,7 +7,7 @@ import java.util.Map;
 public interface IClienteService {
   Map<String, Cliente> listar();
 
-  void salvar(Cliente cliente);
+  void salvar(Cliente cliente) throws IllegalArgumentException;
 
   Cliente buscar(String identificador) throws RegistroNaoEncontradoException;
 }
